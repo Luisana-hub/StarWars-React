@@ -6,9 +6,7 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light mb-3">
 			<Link to="/">
-				<a className="navbar-brand">
-				<img src={logoStarwars} className="d-inline-block align-top"/>
-				</a>
+				<img src={logoStarwars} />
 			</Link>
 			<div className="ml-auto">
 				<Link to="/demo">
