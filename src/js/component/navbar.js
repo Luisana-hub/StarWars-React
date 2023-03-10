@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoStarwars from "../../img/logoStarwars.png"
+import logoStarwars from "../../img/logoStarwars.png";
+import { Dropdown } from "./dropdown";
 
 export const Navbar = () => {
 	return (
@@ -9,9 +10,7 @@ export const Navbar = () => {
 				<img src={logoStarwars} />
 			</Link>
 			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
+				<Dropdown />
 			</div>
 		</nav>
 	);
