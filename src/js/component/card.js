@@ -10,7 +10,14 @@ export const Card = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{props.title}</h5>
                 <p className="card-text">TEXT</p>
-                <a href="#" className="btn btn-primary"> <AiOutlineHeart /> </a>
+                <div className="row justify-content-between">
+                    <div className="col-8">
+                        <a href="#" className="btn btn-primary"> Learn more </a>
+                    </div>
+                    <div className="col-3">
+                        <a href="#" className="btn btn-primary"> <AiOutlineHeart /> </a>
+                    </div>
+                </div>
             </div>
         </div>
     );
